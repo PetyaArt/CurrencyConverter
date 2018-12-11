@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@drawable/app">
+
+
+    <ImageButton
+        android:id="@+id/btn_scan_qr"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@xml/roundedbutton"
+        android:src="@mipmap/ic_converter"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currencyEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/rub"
+        android:textSize="20sp"
+        android:textColor="@color/colorUpClearText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_scan_qr" />
+
+    <TextView
+        android:id="@+id/currencyStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/usd"
+        android:textSize="20sp"
+        android:textColor="@color/colorDownClearText"
+        android:onClick="onClick"
+        app:layout_constraintBottom_toTopOf="@+id/btn_scan_qr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currencyAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/answer"
+        android:textSize="50sp"
+        android:textColor="@color/colorUp"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currencyEnd" />
+
+    <EditText
+        android:id="@+id/currencyQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:hint="@string/enter"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="@color/colorDown"
+        android:inputType="number"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/currencyStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/currencyNameEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClick"
+        android:text="@string/russian_ruble"
+        android:textColor="@color/colorUp"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currencyAnswer" />
+
+    <TextView
+        android:id="@+id/currencyNameStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"
+        android:onClick="onClick"
+        android:text="@string/us_dollar"
+        android:textColor="@color/colorDown"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/currencyQuestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currencySymbolStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/usd_symbol"
+        android:textColor="@color/colorDownClearText"
+        app:layout_constraintBottom_toBottomOf="@+id/currencyQuestion"
+        app:layout_constraintStart_toEndOf="@+id/currencyQuestion" />
+
+    <TextView
+        android:id="@+id/currencySymbolEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/rub_symbol"
+        android:textColor="@color/colorUpClearText"
+        app:layout_constraintBottom_toBottomOf="@+id/currencyAnswer"
+        app:layout_constraintStart_toEndOf="@+id/currencyAnswer" />
+
+</android.support.constraint.ConstraintLayout>

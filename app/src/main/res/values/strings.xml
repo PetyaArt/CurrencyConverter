@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="empty_edit_text">Please enter the number</string>
+    <string name="us_dollar">US Dollar</string>
+    <string name="russian_ruble">Russian Ruble</string>
+    <string name="enter">Enter</string>
+    <string name="answer">1 000 000</string>
+    <string name="usd">USD</string>
+    <string name="rub">RUB</string>
+    <string name="no_connection">No connection</string>
+    <string name="no_data_available">No data available</string>
+    <string name="rub_symbol">руб</string>
+    <string name="usd_symbol">$</string>
+</resources>
